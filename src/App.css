@@ -24,10 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,6 +32,9 @@
     transform: rotate(360deg);
   }
 }
-.Container{
-  margin-left: 0%;
+
+#MiddlePage{
+  display: flex;
+  margin-top: 7%;
+  margin-left: 1.66%;
 }

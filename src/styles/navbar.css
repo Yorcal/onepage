@@ -22,6 +22,11 @@
 .fontStyle:hover{
     border-bottom: solid 1.84px #1089FF !important;
 }
+
+.activePage{
+    border-bottom: solid 1.84px #1089FF !important;
+}
+
 .ml-auto{
      height: 32px;
 }
@@ -31,12 +36,4 @@
     margin-left: 15px !important;
 }
 
-li {
-    list-style-type: none;
-    height: 4vh;
-    width: 2px; 
-    background-color: rgb(145, 145, 145);
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
 

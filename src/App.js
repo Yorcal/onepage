@@ -1,18 +1,37 @@
 // import logo from './images/Logo_Volt.png';
-import { Component } from 'react';
+import React from 'react';
 import './App.css';
-import CustomNavbar from "./component/navbar.js"
+import CustomNavbar from "./component/navbar.js";
 import CustomVerticalNav from "./component/verticalNav.js"
-import Container from 'react-bootstrap/Container'
+import ArticlesDisplay from "./component/articlesDisplay.js"
 
 
-function App() {
+
+class App extends React.Component {
+  constructor(){
+    super()
+    this.state = { 
+      article: 1,
+      activePage: 1, 
+    }
+  }
+  
+  ArticleDisplay = () => {
+
+    
+  }
+
+
+
+  render(){
   return (<>
-    <CustomNavbar />
-    <Container maxWidth="sm">
-      <CustomVerticalNav />
-    </Container>
+    <CustomNavbar article = {this.state.article} />
+    <div id='MiddlePage'>
+      <CustomVerticalNav article = {this.state.article} />
+      <ArticlesDisplay article = {this.state.article} />
+    </div>
   </>);
+  }
 }
-
 export default App;
+
