@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .logo{
     height: 23%;
     width: 23%;
@@ -40,3 +41,47 @@ li {
     margin-bottom: 5px;
 }
 
+=======
+.logo{
+    height: 23%;
+    width: 23%;
+}
+
+.textLogo{
+    height: 23%;
+    width: 40%;
+}
+
+.colorNavbar{
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fontStyle{
+    font-family: Helvetica, bold !important;
+    color: white !important;
+}
+
+.fontStyle:hover{
+    border-bottom: solid 1.84px #1089FF !important;
+}
+.ml-auto{
+     height: 32px;
+}
+
+.ml-auto a{
+    margin-right: 15px  !important;
+    margin-left: 15px !important;
+}
+
+li {
+    list-style-type: none;
+    height: 30px;
+    width: 5px; 
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+>>>>>>> 13d39af02c2a14362c29455cecb344db75bb0480
