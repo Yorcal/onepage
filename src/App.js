@@ -1,22 +1,14 @@
-import logo from './images/Logo_Volt.png';
+// import logo from './images/Logo_Volt.png';
 import './App.css';
 import CustomNavbar from "./component/navbar.js"
-import React from 'react';
+import CustomVerticalNav from "./component/verticalNav.js"
 
-class App extends React.Component() {
-    constructor(){
-      
-    }
-render(){
+
+function App() {
   return (<>
-    <CustomNavbar></CustomNavbar>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <CustomNavbar />
+    <CustomVerticalNav />
   </>);
-  }
 }
 
 export default App;
