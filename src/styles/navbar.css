@@ -33,10 +33,10 @@
 
 li {
     list-style-type: none;
-    height: 30px;
-    width: 5px; 
-    background-color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    height: 4vh;
+    width: 2px; 
+    background-color: rgb(145, 145, 145);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
