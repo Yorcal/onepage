@@ -14,6 +14,8 @@ function VerticalBar() {
                             <li><Nav.Link href="/home"></Nav.Link></li>
                             <li><Nav.Link eventKey="link-1"></Nav.Link></li>
                             <li><Nav.Link eventKey="link-2"></Nav.Link></li>
+                            <li><Nav.Link eventKey="link-3"></Nav.Link></li>
+                            <li><Nav.Link eventKey="link-4"></Nav.Link></li>
                         </ul>
                     </Nav>
                 </Navbar.Collapse>
