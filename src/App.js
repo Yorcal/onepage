@@ -1,8 +1,13 @@
 import logo from './images/Logo_Volt.png';
 import './App.css';
 import CustomNavbar from "./component/navbar.js"
+import React from 'react';
 
-function App() {
+class App extends React.Component() {
+    constructor(){
+      
+    }
+render(){
   return (<>
     <CustomNavbar></CustomNavbar>
     <div className="App">
@@ -11,6 +16,7 @@ function App() {
       </header>
     </div>
   </>);
+  }
 }
 
 export default App;
