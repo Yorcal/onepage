@@ -1,9 +1,18 @@
 // import logo from './images/Logo_Volt.png';
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom'
 import './App.css';
-import CustomNavbar from "./component/navbar.js";
-import CustomVerticalNav from "./component/verticalNav.js"
-import ArticlesDisplay from "./component/articlesDisplay.js"
+import Home from "./pages/Home.js";
+import Volt from "./pages/Volt.js";
+import Teams from "./pages/Home.js";
+import Webtv from "./pages/Home.js";
+import Shop from "./pages/Home.js";
+import Press from "./pages/Home.js";
 
 
 
@@ -24,13 +33,31 @@ class App extends React.Component {
 
 
   render(){
-  return (<>
-    <CustomNavbar article = {this.state.article} />
-    <div id='MiddlePage'>
-      <CustomVerticalNav article = {this.state.article} />
-      <ArticlesDisplay article = {this.state.article} />
-    </div>
-  </>);
+    return (
+      <Router>
+        <Switch>
+           
+          <Route exact path='/'  render={(props) => (
+              <Home {...props} article = {this.state.article} ajouterAuPanier = {this.ajouterAuPanier} />
+              )} /> 
+          <Route exact path='/home/volt' render={(props) => (
+            <Volt {...props} />
+                )} />
+          <Route exact path='/home/teams' render={(props) => (
+            <Teams {...props} />
+                )} />
+          <Route exact path='/home/webtv' render={(props) => (
+            <Webtv {...props} />
+                )} />
+          <Route exact path='/home/shop' render={(props) => (
+            <Shop {...props} />
+                )} />
+          <Route exact path='/home/press' render={(props) => (
+            <Press {...props} />
+                )} />
+        </Switch>
+      </Router>
+    );
   }
 }
 export default App;

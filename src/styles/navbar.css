@@ -17,6 +17,7 @@
 .fontStyle{
     font-family: Helvetica, bold !important;
     color: white !important;
+    text-decoration: none !important;
 }
 
 .fontStyle:hover{
