@@ -35,6 +35,7 @@
 
 #MiddlePage{
   display: flex;
-  margin-top: 7%;
-  margin-left: 1.66%;
+  width: auto;
+  height: 75vh;
+  margin-top: 2vh;
 }

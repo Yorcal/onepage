@@ -1,0 +1,13 @@
+.margin-top{
+    margin-top: 7%;
+}
+.carousel-slider {
+    height: 200px!important;
+    width: 40%!important;
+}
+.slider-wrapper {
+    height: 100%!important;
+}
+.carousel .control-dots .dot {
+    list-style-type: none!important;
+}

@@ -1,0 +1,41 @@
+.containerteams{
+    display: flex;
+}
+
+.backBlue {
+    background-color: #1089FF;
+}
+
+.box{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 30vh;
+    background-color: rgba(16, 137, 255, 0.5);
+    height: 100%;
+}
+
+.RL{
+    background-image: url('https://i.jeuxactus.com/datas/jeux/r/o/rocket-league/xl/rocket-league-5fcc7db162613.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.LOL{
+    background-image: url('https://i2.wp.com/www.pedagojeux.fr/wp-content/uploads/2019/11/LoL_1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.CSGO{
+    background-image: url('https://d3isma7snj3lcx.cloudfront.net/optim/images/news/30/3050829423/non-sans-heurts-cs-go-lance-son-systeme-anti-triche-trusted-factor-d7a8f379__w854.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.R6{
+    background-image: url('https://www.actugaming.net/wp-content/uploads/2019/05/tom-clancys-rainbow-six-siege.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.marginRight {
+    margin-right: 2vh;
+}

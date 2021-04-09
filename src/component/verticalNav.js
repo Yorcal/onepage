@@ -13,8 +13,8 @@ function VerticalBar() {
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <ul>
                         <Link to="/" ><li></li></Link>
-                        <Link to="/home/teams" ><li></li></Link>
                         <Link to="/home/volt" ><li></li></Link>
+                        <Link to="/home/teams" ><li></li></Link>
                         <Link to="/home/webtv" ><li></li></Link>
                         <Link to="/home/shop" ><li></li></Link>
                         <Link to="/home/press"><li></li></Link>

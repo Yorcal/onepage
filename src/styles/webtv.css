@@ -1,0 +1,21 @@
+.containerwebtv{
+    display: flex;
+}
+
+.backBlue {
+    background-color: #1089FF;
+}
+
+.right{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 20vh;
+}
+.left{
+    align-items: center;
+    display: flex;
+    
+    margin-right: 2%;
+    width: 120vh;
+}

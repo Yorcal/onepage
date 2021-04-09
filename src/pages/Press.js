@@ -1,5 +1,5 @@
 import React from 'react'
-import ArticlesDisplay from "../component/articlesDisplay.js";
+
 
 
 
@@ -12,7 +12,7 @@ class Press extends React.Component {
     }
     render(){
         return(<>
-                <ArticlesDisplay  />
+               
                 <h1>Press</h1>
   </>);
   }

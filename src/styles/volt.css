@@ -1,0 +1,32 @@
+.margin-top{
+    margin-top: 9%;
+    width: 75%;
+}
+
+.background{
+    background-image: no-repeat url('../images/Logo_Volt.png')
+
+}
+.title {
+    font-size: 100px !important;
+    color: white;
+    font-family: Helvetica; 
+    font-weight: bolder;
+}
+
+.secondTitle {
+    font-size: 30px !important;
+    color: #1089FF;
+    margin-top: 65px;
+    font-family: Helvetica; 
+    font-weight: 900;
+}
+
+.font{
+    color: white;
+    font-size: 16px;
+}
+
+.margin-button{
+    margin-top: 40px;
+}

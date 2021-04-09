@@ -1,7 +1,7 @@
 li {
     list-style-type: none;
     height: 4vh;
-    width: 2px; 
+    width: 3px; 
     background-color: rgb(145, 145, 145);
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -10,4 +10,8 @@ li {
 li a {
     height: 4vh;
     width: 2px; 
+}
+ul {
+    margin-top: 20vh;
+    margin-left: 3vh;
 }
