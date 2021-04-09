@@ -6,3 +6,8 @@ li {
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+
+li a {
+    height: 4vh;
+    width: 2px; 
+}

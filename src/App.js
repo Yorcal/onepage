@@ -7,12 +7,14 @@ import {
   Redirect
 } from 'react-router-dom'
 import './App.css';
+import CustomNavbar from "./component/navbar.js";
+import CustomVerticalNav from "./component/verticalNav.js"
 import Home from "./pages/Home.js";
 import Volt from "./pages/Volt.js";
-import Teams from "./pages/Home.js";
-import Webtv from "./pages/Home.js";
-import Shop from "./pages/Home.js";
-import Press from "./pages/Home.js";
+import Teams from "./pages/Teams.js";
+import Webtv from "./pages/Webtv.js";
+import Shop from "./pages/Shop.js";
+import Press from "./pages/Press.js";
 
 
 
@@ -20,42 +22,44 @@ class App extends React.Component {
   constructor(){
     super()
     this.state = { 
-      article: 1,
-      activePage: 1, 
+      article : 'news',
     }
   }
   
-  ArticleDisplay = () => {
-
+  // ChangerArticle = (article, NewArticle) => {
+  //   this.setState((article:NewArticle))
     
-  }
+  // }
 
 
 
   render(){
     return (
       <Router>
-        <Switch>
-           
-          <Route exact path='/'  render={(props) => (
-              <Home {...props} article = {this.state.article} ajouterAuPanier = {this.ajouterAuPanier} />
-              )} /> 
-          <Route exact path='/home/volt' render={(props) => (
-            <Volt {...props} />
-                )} />
-          <Route exact path='/home/teams' render={(props) => (
-            <Teams {...props} />
-                )} />
-          <Route exact path='/home/webtv' render={(props) => (
-            <Webtv {...props} />
-                )} />
-          <Route exact path='/home/shop' render={(props) => (
-            <Shop {...props} />
-                )} />
-          <Route exact path='/home/press' render={(props) => (
-            <Press {...props} />
-                )} />
-        </Switch>
+        <CustomNavbar  />
+            <div id='MiddlePage'>
+                <CustomVerticalNav  />
+                <Switch>
+                  <Route exact path='/'  render={(props) => (
+                      <Home {...props} article = {this.state.article} />
+                      )} /> 
+                  <Route exact path='/home/volt' render={(props) => (
+                    <Volt {...props} />
+                        )} />
+                  <Route exact path='/home/teams' render={(props) => (
+                    <Teams {...props} />
+                        )} />
+                  <Route exact path='/home/webtv' render={(props) => (
+                    <Webtv {...props} />
+                        )} />
+                  <Route exact path='/home/shop' render={(props) => (
+                    <Shop {...props} />
+                        )} />
+                  <Route exact path='/home/press' render={(props) => (
+                    <Press {...props} />
+                        )} />
+                </Switch>
+              </div>
       </Router>
     );
   }

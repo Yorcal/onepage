@@ -1,6 +1,4 @@
 import React from 'react'
-import CustomNavbar from "../component/navbar.js";
-import CustomVerticalNav from "../component/verticalNav.js";
 import ArticlesDisplay from "../component/articlesDisplay.js";
 
 
@@ -13,11 +11,8 @@ class Teams extends React.Component {
     }
     render(){
         return(<>
-            <CustomNavbar article = {this.state.article} />
-            <div id='MiddlePage'>
-                <CustomVerticalNav article = {this.state.article} />
-                <ArticlesDisplay article = {this.state.article} />
-            </div>
+                <ArticlesDisplay />
+                <h1>Teams</h1>
   </>);
   }
 }

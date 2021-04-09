@@ -12,12 +12,12 @@ function VerticalBar() {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <ul>
-                        <li><Link to="/"></Link></li>
-                        <li><Link to="/home/volt"></Link></li>
-                        <li><Link to="/home/teams"></Link></li>
-                        <li><Link to="/home/webtv"></Link></li>
-                        <li><Link to="/home/shop"></Link></li>
-                        <li><Link to="/home/press"></Link></li>
+                        <Link to="/" ><li></li></Link>
+                        <Link to="/home/teams" ><li></li></Link>
+                        <Link to="/home/volt" ><li></li></Link>
+                        <Link to="/home/webtv" ><li></li></Link>
+                        <Link to="/home/shop" ><li></li></Link>
+                        <Link to="/home/press"><li></li></Link>
                     </ul>
                 </Nav>
             </Navbar.Collapse>
