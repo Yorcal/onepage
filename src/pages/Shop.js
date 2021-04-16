@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/shop.css'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
+import "../styles/volt.css"
 import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 class Shop extends React.Component {
     constructor(){
@@ -14,17 +14,24 @@ class Shop extends React.Component {
     }
     render(){
         return(<>
-              <div className="Background">
-                <Container>
-                  <Row>
-                    <h1>SHOP</h1>
-                  </Row>
-                  <Row>
-                    <p>lorem ipsum patatitata blabla ffsfsdfefessefsfefefgegegsgseggessegesgsegss sf s fd dsfq fe fesf es fes fs fe fs fs fef esf ef z fzef zf ze fz fz ef zef z fez ef e fezf ze fez fez fez fez fez </p>
-                  </Row>
-                  <Button variant="primary">GO SHOPPING</Button>
-                </Container>
-              </div>
+            <div className="margin-top">
+              <Row>
+                <Col lg={2} md={6}>
+                  <h1 className="title">SHOP</h1> 
+                </Col>
+                <Col lg={1} md={1}>
+                  <p></p>
+                </Col> 
+              </Row>
+              <Row><p></p></Row>
+              <Row>
+                <p className="font">tLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.ttttttt</p>
+              </Row>
+              <Row>
+                <Button className="rounded-pill margin-button" variant="primary">GO SHOPPING</Button>
+              </Row>
+            
+            </div>
   </>);
   }
 }
