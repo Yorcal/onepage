@@ -1,0 +1,13 @@
+.boxpress{
+    width: 30vh;
+    border: 3px solid #1089FF;
+    height: 100%;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+
+.boxpress h2 {
+    color: white;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
