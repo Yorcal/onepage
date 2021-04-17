@@ -15,6 +15,7 @@ import Teams from "./pages/Teams.js";
 import Webtv from "./pages/Webtv.js";
 import Shop from "./pages/Shop.js";
 import Press from "./pages/Press.js";
+import Palmares from "./pages/Palmares.js";
 
 
 
@@ -45,6 +46,9 @@ class App extends React.Component {
                       )} /> 
                   <Route exact path='/home/volt' render={(props) => (
                     <Volt {...props} />
+                        )} />
+                  <Route exact path='/home/palmares' render={(props) => (
+                    <Palmares {...props} />
                         )} />
                   <Route exact path='/home/teams' render={(props) => (
                     <Teams {...props} />

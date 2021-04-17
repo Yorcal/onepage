@@ -1,0 +1,16 @@
+.palmabox {
+    width: 30vh;
+    height: 100%;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    color: white;
+}
+
+.palmabox h2 {
+    font-size: 70px;
+}
+
+.palmaliste {
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
