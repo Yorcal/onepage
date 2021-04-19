@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 
 function VerticalBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" className="colorNavbar" variant="dark">
+        <Navbar collapseOnSelect expand="lg" className="colorNavbarVert" variant="dark">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav defaultActiveKey="/home" className="flex-column">
