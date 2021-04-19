@@ -16,65 +16,83 @@ class Palmares extends React.Component {
     render(){
         return(<>
                
-            <Row>
+            <Row className='rauw'>
               <Col>
-                <Link to="/home/volt" className="fontStyle"><Button className="rounded-pill margin-button" variant="primary">Retour</Button></Link>
+                <Link to="/volt" className="fontStyle"><p className='pp'>«</p></Link>
               </Col>
             </Row>
-            <Row>
-                <Col>
-                    <div className='palmabox '>
-                        <h2 >2021</h2>
-                        <div className='palmaliste'>
+            <Row className='rauw'>
+                <Col className='colonne'>
+                    <div className='palmabox'>
+                        <h2 className='animate__animated animate__rotateIn'>2021</h2>
+                        <div className='palmaliste animate__animated animate__fadeInRight'>
                         <Row>
                             <h3>CS:GO</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rainbow Six</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rocket League</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         </div>
                     </div>
                 </Col>
-                <Col>
-                    <div className='palmabox '>
-                        <h2 >2020</h2>
-                        <div className='palmaliste'>
+                <Col className='colonne'>
+                    <div className='palmabox'>
+                        <h2 className='animate__animated animate__rotateIn animate__delay-1s'>2020</h2>
+                        <div className='palmaliste animate__animated animate__fadeInRight animate__delay-1s'>
                         <Row>
                             <h3>CS:GO</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rainbow Six</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rocket League</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         </div>
                     </div>
                 </Col>
-                <Col>
-                    <div className='palmabox '>
-                        <h2 >2019</h2>
-                        <div className='palmaliste'>
-                        <Row>
+                <Col className='colonne'>
+                    <div className='palmabox'>
+                        <h2 className='animate__animated animate__rotateIn animate__delay-2s'>2019</h2>
+                        <div className='palmaliste animate__animated animate__fadeInRight animate__delay-2s'>
+                                                <Row>
                             <h3>CS:GO</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rainbow Six</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         <Row>
                             <h3>Rocket League</h3>
-                            <p>3rd DreamHack Open Atlanta</p>
+                        </Row>
+                        <Row>
+                            <p><span className='blue'>3rd </span>DreamHack Open Atlanta</p>
                         </Row>
                         </div>
                     </div>

@@ -15,10 +15,11 @@ class Volt extends React.Component {
     }
     render(){
         return(<>
-            <div className="margin-top">
+
+            <div className="blocShopVolt animate__animated animate__fadeInRight">
               <Row>
                 <Col lg={2} md={6}>
-                  <h1 className="title">VOLT</h1> 
+                  <h1 className="title ">VOLT</h1> 
                 </Col>
                 <Col lg={1} md={1}>
                   <p></p>
@@ -32,7 +33,7 @@ class Volt extends React.Component {
                 <p className="font">tLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.ttttttt</p>
               </Row>
               <Row>
-                <Link to="/home/palmares" className="fontStyle"><Button className="rounded-pill margin-button" variant="primary">PALMARES</Button></Link>
+                <Link to="/palmares" className="fontStyle"><Button className="rounded-pill margin-button" variant="primary">PALMARES</Button></Link>
               </Row>
             
             </div>

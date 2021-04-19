@@ -14,7 +14,8 @@ class Shop extends React.Component {
     }
     render(){
         return(<>
-            <div className="margin-top">
+            <img src='./images/Maillot.png' />
+            <div className="backGroundMaillot blocShopVolt animate__animated animate__fadeInRight">
               <Row>
                 <Col lg={2} md={6}>
                   <h1 className="title">SHOP</h1> 

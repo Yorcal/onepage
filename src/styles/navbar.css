@@ -7,6 +7,11 @@
     height: 23%;
     width: 40%;
 }
+.textLogo2{
+    height: 20%;
+    width: 20%;
+    padding-top: 1vh;
+}
 
 .colorNavbar{
     background-color: black;
@@ -24,7 +29,7 @@
     border-bottom: solid 1.84px #1089FF !important;
 }
 
-.activePage{
+.active-page{
     border-bottom: solid 1.84px #1089FF !important;
 }
 

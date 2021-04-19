@@ -7,10 +7,25 @@
 }
 
 .palmabox h2 {
-    font-size: 70px;
+    font-size: 80px;
 }
 
 .palmaliste {
     margin-left: 2vh;
     margin-top: 2vh;
+    font-size: 15px;
+}
+.colonne {
+    margin-left: 6vh;
+    margin-right: 4vh;
+}
+.rauw {
+    margin-top: 15vh;
+}
+.pp {
+    font-size: 80px;
+    margin-top: 3vh;
+}
+.blue {
+    color: #1089FF;
 }

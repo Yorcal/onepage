@@ -12,25 +12,24 @@ class Press extends React.Component {
     }
     render(){
         return(<>
-               
           <Row>
-              <div className='boxpress '>
+              <div className='boxpress animate__animated animate__fadeInRight'>
                 <h2 >Charte Graphique</h2>
               </div>
 
-              <div className='boxpress '>
+              <div className='boxpress animate__animated animate__fadeInRight'>
                 <h2 >LFL 2020</h2>
               </div>
 
-              <div className='boxpress '>
+              <div className='boxpress animate__animated animate__fadeInRight'>
                 <h2 >Katowice Minor 2019</h2>
               </div>
 
-              <div className='boxpress '>
+              <div className='boxpress animate__animated animate__fadeInRight'>
                 <h2 >Lyon Esport 2019</h2>
               </div>
 
-              <div className='boxpress'>
+              <div className='boxpress animate__animated animate__fadeInRight'>
                 <h2 >LOL Open Tour 2019</h2>
               </div>
           </Row>

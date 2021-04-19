@@ -12,13 +12,12 @@ class Webtv extends React.Component {
       }
     }
     render(){
-        return(<>
-                
-          <div className='containerwebtv'>
-            <div className='backBlue left'>
+        return(<>     
+          <div className='containerwebtv animate__animated animate__fadeInRight'>
+            <div className='backBlue left '>
               <h1 >PLAYER</h1>
             </div>
-            <div className='backBlue right'>
+            <div className='backBlue right '>
               <h1>CHAT</h1>
             </div>
           </div>

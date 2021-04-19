@@ -1,6 +1,7 @@
-.margin-top{
-    margin-top: 9%;
+.blocShopVolt{
+    padding-top: 9%;
     width: 75%;
+    
 }
 
 .background{
@@ -30,3 +31,10 @@
 .margin-button{
     margin-top: 40px;
 }
+
+.backGroundMaillot{
+    background-image: url("https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw53d48e40/images/hi-res/001474484_101.png?sw=600&sh=600&sm=fit");
+    background-position: center;
+    background-size: cover;
+}
+
