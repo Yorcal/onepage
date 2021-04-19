@@ -1,15 +1,15 @@
 .logo{
-    height: 23%;
-    width: 23%;
+    height: 15vh;
+    width: 15vh;
 }
 
 .textLogo{
-    height: 23%;
-    width: 40%;
+    height: 10vh;
+    width: 30vh;
 }
 .textLogo2{
-    height: 20%;
-    width: 20%;
+    height: 10vh;
+    width: 10vh;
     padding-top: 1vh;
 }
 
@@ -42,4 +42,7 @@
     margin-left: 15px !important;
 }
 
-
+.NavBarFixed{
+    height: 150px!important;
+    width: auto!important;
+}
