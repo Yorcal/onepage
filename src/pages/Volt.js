@@ -1,9 +1,10 @@
 import React from 'react'
-import "../styles/volt.css"
+import "../styles/voltandshop.css"
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import {Link} from 'react-router-dom';
+import Volteuhgris from '../images/voltgris.png'
 
 
 class Volt extends React.Component {
@@ -16,7 +17,9 @@ class Volt extends React.Component {
     render(){
         return(<>
 
-            <div className="blocShopVolt animate__animated animate__fadeInRight">
+          <div className='global'>
+            <img className='Arriere animate__animated animate__zoomInDown' src={Volteuhgris} />
+              <div className="blocShopVolt animate__animated animate__fadeInRight">
               <Row>
                 <Col lg={2} md={6}>
                   <h1 className="title ">VOLT</h1> 
@@ -34,6 +37,7 @@ class Volt extends React.Component {
               </Row>
             
             </div>
+          </div>
   </>);
   }
 }

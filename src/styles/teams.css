@@ -4,7 +4,7 @@
 
 .teamsrow {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .box{
@@ -39,4 +39,8 @@
 
 .marginRight {
     margin-right: 2vh;
+}
+
+.TeamListe{
+    width: 180vh;
 }

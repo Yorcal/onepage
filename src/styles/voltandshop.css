@@ -4,10 +4,6 @@
     
 }
 
-.background{
-    background-image: no-repeat url('../images/Logo_Volt.png')
-
-}
 .title {
     font-size: 100px !important;
     color: white;
@@ -31,9 +27,14 @@
 .margin-button{
     margin-top: 40px;
 }
-
-.backGroundMaillot{
-    background-image: url("../images/Maillot.png");
-    background-position: center;
-    background-size: cover;
+.Arriere {
+    z-index: -1;
+    position: absolute;
+    margin-left: 70vh;
+}
+.content{
+    z-index: 0;
+}
+.gros {
+    height: 75vh;
 }
