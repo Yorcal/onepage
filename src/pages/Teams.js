@@ -14,7 +14,7 @@ class Teams extends React.Component {
     render(){
         return(<> 
         <div className='TeamListe'>
-          <Row>
+          <Row className='teamsrow'>
             
               <Col lg={2} md={4}>
                 <div className='RL marginRight animate__animated animate__backInUp'>
@@ -53,8 +53,7 @@ class Teams extends React.Component {
                   <h1 >SOON</h1>
                 </div>
               </Col>
-            
-          </Row>
+            </Row>
           </div>
   </>);
   }

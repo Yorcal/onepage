@@ -1,0 +1,17 @@
+.logo_rs {
+    height: 4;
+    width: 4vh;
+    margin-right: 3vh;
+    margin-left: 5vh;
+}
+
+.legale {
+    font-size: 15px;
+    color: white;
+    margin-left: 30vh;
+}
+
+.foot {
+    margin-top: 3vh;
+    width: 200vh;
+}

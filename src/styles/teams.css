@@ -1,9 +1,10 @@
-.containerteams{
-    display: flex;
-}
-
 .backBlue {
     background-color: #1089FF;
+}
+
+.teamsrow {
+    display: flex;
+    justify-content: space-between;
 }
 
 .box{
@@ -11,11 +12,9 @@
     display: flex;
     justify-content: center;
     background-color: rgba(16, 137, 255, 0.5);
-    height: 70vh;
+    height: 65vh;
 }
-.TeamListe {
-    width: 200vh;
-}
+
 
 .RL{
     background-image: url('https://i.jeuxactus.com/datas/jeux/r/o/rocket-league/xl/rocket-league-5fcc7db162613.jpg');

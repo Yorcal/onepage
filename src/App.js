@@ -8,7 +8,8 @@ import {
 } from 'react-router-dom'
 import './App.css';
 import CustomNavbar from "./component/navbar.js"; 
-import CustomVerticalNav from "./component/verticalNav.js"
+import CustomVerticalNav from "./component/verticalNav.js";
+import Footer from "./component/footer.js";
 import Home from "./pages/Home.js";
 import Volt from "./pages/Volt.js";
 import Teams from "./pages/Teams.js";
@@ -65,6 +66,7 @@ class App extends React.Component {
                         )} />
                 </Switch>
               </div>
+            <Footer />
       </Router>
     );
   }
