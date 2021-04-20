@@ -2,42 +2,28 @@ import React from "react";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Carousel } from 'react-responsive-carousel';
 import "../styles/news.css"
-
+import SemiCarousel from '../component/semicarousel.js'
 
 class Home extends React.Component {
     constructor(){
       super()
       this.state = { 
-         
+         news : { Article_1 : { title : 'News Du Jour',
+                                content: 'Voici venu le temps des haricots',
+                                miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
+                                link :'https://google.com'
+                            },
+                Article_2 : {   title : 'VOLT for the next CS:GO Major',
+                                content: 'Bonjour les amis',
+                                miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
+                                link :'https://google.com'
+                            }
+                        }
       }
     }
     render(){
         return(<>
-            <div className="margin-top">
-                <h2>My Image Gallery</h2>
-                {/* <Carousel showArrows={false} renderIndicator={false} showStatus ={false}>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=1" />
-                        <p className="legend">My Classic Still 1</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=2" />
-                        <p className="legend">My Classic Still 2</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=3" />
-                        <p className="legend">My Classic Still 3</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=4" />
-                        <p className="legend">My Classic Still 3</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=5" />
-                        <p className="legend">My Classic Still 3</p>
-                    </div>
-                </Carousel> */}
-            </div>
+            <SemiCarousel />
 
   </>);
   }

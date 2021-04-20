@@ -28,7 +28,7 @@ class CustomNavbar extends React.Component {
             <Switch>
                 <Route exact path='/webtv'>
                     <Navbar collapseOnSelect expand="lg" className="colorNavbar NavBarFixed" variant="dark">
-                        <Navbar.Brand><NavLink to="/"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink><img className="textLogo" src={textLogo} alt='VoltText'></img><img className="textLogo2 animate__animated animate__lightSpeedInRight" src={LogoTv} alt='.TV'></img></Navbar.Brand>
+                        <Navbar.Brand><NavLink to="/news"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink><img className="textLogo" src={textLogo} alt='VoltText'></img><img className="textLogo2 animate__animated animate__lightSpeedInRight" src={LogoTv} alt='.TV'></img></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ml-auto" >
@@ -44,7 +44,7 @@ class CustomNavbar extends React.Component {
                 </Route>
                 <Route>
                     <Navbar collapseOnSelect expand="lg" className="colorNavbar NavBarFixed" variant="dark">
-                        <Navbar.Brand><NavLink to="/"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink><img className="textLogo" src={textLogo} alt='VoltText'></img></Navbar.Brand>
+                        <Navbar.Brand><NavLink to="/news"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink><img className="textLogo" src={textLogo} alt='VoltText'></img></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ml-auto" >

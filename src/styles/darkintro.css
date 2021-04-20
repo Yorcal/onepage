@@ -1,0 +1,10 @@
+.Intro {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.transparent {
+    background-color: #000000;
+    border: none;
+}

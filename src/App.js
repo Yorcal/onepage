@@ -17,6 +17,7 @@ import Webtv from "./pages/Webtv.js";
 import Shop from "./pages/Shop.js";
 import Press from "./pages/Press.js";
 import Palmares from "./pages/Palmares.js";
+import DarkIntro from './pages/DarkIntro.js';
 
 
 
@@ -39,10 +40,16 @@ class App extends React.Component {
   render(){
     return (
       <Router>
-        <CustomNavbar  />
+        <Switch>
+          <Route exact path='/' render={(props) => (
+            <DarkIntro {...props} />
+                )} />
+          <Route>
+          <CustomNavbar  />
             <div id='MiddlePage'>
                 <CustomVerticalNav  />
                 <Switch>
+                  
                   <Route exact path='/news'  render={(props) => (
                       <Home {...props} article = {this.state.article} />
                       )} /> 
@@ -67,6 +74,8 @@ class App extends React.Component {
                 </Switch>
               </div>
             <Footer />
+            </Route>
+          </Switch>
       </Router>
     );
   }
