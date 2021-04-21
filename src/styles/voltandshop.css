@@ -38,3 +38,12 @@
 .gros {
     height: 75vh;
 }
+@media only screen and (max-width:1000px) {
+    .Arriere{
+        height: 50vh;
+        width: 50vh;
+        margin-top: 10vh;
+        margin-left: 0vh;
+        overflow: hidden;
+    }
+   }

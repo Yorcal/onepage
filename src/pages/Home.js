@@ -9,14 +9,28 @@ class Home extends React.Component {
       super()
       this.state = { 
          news : [ { title : 'News Du Jour',
-                                content: 'Voici venu le temps des haricots',
-                                miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
-                                link :'https://google.com'
+                            id: 1,
+                            content: 'Voici venu le temps des haricots',
+                            miniature: 'https://iem.imgix.net/season-13/katowice/wp-content/uploads/2018/07/IEM-katowice-by-bart-oerbekke-1.jpg?auto=format%2Ccompress',
+                            link :'https://google.com'
                             },
                 {   title : 'VOLT for the next CS:GO Major',
-                                content: 'Bonjour les amis',
-                                miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
-                                link :'https://google.com'
+                            id : 2,
+                            content: 'Bonjour les amis',
+                            miniature: 'https://gamek.mediacdn.vn/thumb_w/640/133514250583805952/2020/2/24/photo-3-158251488316787443375.jpg',
+                            link :'https://google.com'
+                            },
+                {   title : 'Bip Boup Article', 
+                            id : 3,
+                            content: 'neggpopo !!!!!',
+                            miniature: 'http://www3.poitiers-jeunes.com/wp-content/uploads/2016/10/Expressifs-Morgan-Bisson-84.jpg',
+                            link :'https://google.com'
+                            },
+                {   title : 'Twitter nous répond',
+                            id: 4,
+                            content: 'oui',
+                            miniature: 'https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg',
+                            link :'https://google.com'
                             }
                           ]
                         }

@@ -25,7 +25,7 @@ class CustomNavbar extends React.Component {
     
     render(){
         return (
-            <Navbar collapseOnSelect expand="lg" className="colorNavbar NavBarFixed" variant="dark">
+            <Navbar collapseOnSelect expand="md" className="colorNavbar NavBarFixed" variant="dark">
                 <Switch>
                     <Route exact path='/webtv'>
                         <Navbar.Brand><NavLink to="/news"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink></Navbar.Brand>

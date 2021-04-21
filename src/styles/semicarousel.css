@@ -1,0 +1,28 @@
+.miniature {
+    width : 15vh;
+    height : 10vh;
+    margin-left: 1vh;
+}
+.div{
+    margin-left: 10vh;
+}
+.info {
+    margin-left: 80vh;
+}
+.grando {
+    height: 350px;
+    width: 600px;
+    z-index: 0;
+    margin-top: 10vh;
+    margin-left: 100vh;
+}
+.titreuuh {
+    width: 70vh;
+    font-size: 50px;
+    margin-left: 10vh;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+    margin-top: 20vh;
+}
