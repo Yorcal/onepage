@@ -8,22 +8,23 @@ class Home extends React.Component {
     constructor(){
       super()
       this.state = { 
-         news : { Article_1 : { title : 'News Du Jour',
+         news : [ { title : 'News Du Jour',
                                 content: 'Voici venu le temps des haricots',
                                 miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
                                 link :'https://google.com'
                             },
-                Article_2 : {   title : 'VOLT for the next CS:GO Major',
+                {   title : 'VOLT for the next CS:GO Major',
                                 content: 'Bonjour les amis',
                                 miniature: 'https://upload.wikimedia.org/wikipedia/fr/f/fb/Google_Chrome_logo2.png',
                                 link :'https://google.com'
                             }
+                          ]
                         }
       }
-    }
+    
     render(){
         return(<>
-            <SemiCarousel />
+            <SemiCarousel news = {this.state.news} />
 
   </>);
   }
