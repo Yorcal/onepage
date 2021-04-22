@@ -12,37 +12,38 @@ class SemiCarousel extends React.Component {
       }
     }
     
-    // changeIndex = index => this.setState({index})
+  changeIndex = index => this.setState({index})
 
-    
+  
+  changeClass = index => {
 
-    sleep(milliseconds) {
-      const date = Date.now();
-      let currentDate = null;
-      do {
-        currentDate = Date.now();
-      } while (currentDate - date < milliseconds);
-  }
+    var newindex = this.state.index;
 
-  changeClass(index) {
-      document.querySelector('Arriere').classList.remove('animate__animated',' animate__fadeInTopRight');
-      document.querySelector('Arriere').classList.add('animate__animated','animate__fadeOutBottomLeft');
-      setTimeout(function(){
-        this.setState({index});
-      }, 200);
-  }
+    if (newindex !== index) { 
+      document.getElementById('Michael').classList.replace("animate__fadeInTopRight", "animate__fadeOutBottomLeft");
+      document.getElementById('Jackson').classList.replace("animate__fadeInRight", "animate__fadeOutLeft");
+      setTimeout(() => {
+        this.setState({index},() =>{
+          document.getElementById('Michael').classList.replace("animate__fadeOutBottomLeft", "animate__fadeInTopRight");
+          document.getElementById('Jackson').classList.replace("animate__fadeOutLeft","animate__fadeInRight");
+        })
+      }, 350);
+    }
+}
+
 
     render(){
 
       const news = this.props.news
       console.log(news);
         const newsSelected = news.find(n => n.id===this.state.index);
+        console.log(this.state.index,newsSelected);
         return(<>
 
           <div>
               <div className='global'>
-                <img className='Arriere grando animate__animated animate__fadeInTopRight' src={newsSelected.miniature} />
-                <div className="content blocShopVolt animate__animated animate__fadeInRight">
+                <img id="Michael" className='Arriere grando animate__animated animate__fadeInTopRight' src={newsSelected.miniature} />
+                <div id="Jackson" className="content blocShopVolt animate__animated animate__fadeInRight">
 
                   <Row>
                     <Col lg={1}>

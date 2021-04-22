@@ -16,7 +16,7 @@ class Home extends React.Component {
                             },
                 {   title : 'VOLT for the next CS:GO Major',
                             id : 2,
-                            content: 'OUR LATEST TWEET',
+                            content: 'OUR LATEST TWEET OF THE DAY',
                             miniature: 'https://gamek.mediacdn.vn/thumb_w/640/133514250583805952/2020/2/24/photo-3-158251488316787443375.jpg',
                             link :'https://google.com'
                             },
