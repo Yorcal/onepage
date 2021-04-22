@@ -12,8 +12,26 @@ class SemiCarousel extends React.Component {
       }
     }
     
-    changeIndex = index => this.setState({index})
+    // changeIndex = index => this.setState({index})
+
     
+
+    sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+  }
+
+  changeClass(index) {
+      document.querySelector('Arriere').classList.remove('animate__animated',' animate__fadeInTopRight');
+      document.querySelector('Arriere').classList.add('animate__animated','animate__fadeOutBottomLeft');
+      setTimeout(function(){
+        this.setState({index});
+      }, 200);
+  }
+
     render(){
 
       const news = this.props.news
@@ -23,18 +41,20 @@ class SemiCarousel extends React.Component {
 
           <div>
               <div className='global'>
-                <img className='Arriere grando animate__animated animate__jello' src={newsSelected.miniature} />
+                <img className='Arriere grando animate__animated animate__fadeInTopRight' src={newsSelected.miniature} />
                 <div className="content blocShopVolt animate__animated animate__fadeInRight">
+
                   <Row>
+                    <Col lg={1}>
+                      <Button className="rounded-pill margin-button" variant="primary">-</Button>
+                      <Button className="rounded-pill margin-button" variant="primary">+</Button>
+                    </Col>
                     <Col lg={10} md={6}>
                       <h1 className="title">{newsSelected.content}</h1>
                     </Col>
                   </Row>
                   <Row>
-                    <p className="font indeex">tLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.ttttttt</p>
-                  </Row>
-                  <Row>
-                    <Button className="rounded-pill margin-button" variant="primary">GO SHOPPING</Button>
+                    <Button className="rounded-pill margin-button ButtonNews" variant="primary">GO TO ARTICLE</Button>
                   </Row>
                 
                 </div>
@@ -42,7 +62,7 @@ class SemiCarousel extends React.Component {
 
             <div className='div'>
               {news.map((article) => (
-                <a onClick={()=>this.changeIndex(article.id)}><img src={article.miniature} className='miniature'/></a>
+                <a onClick={()=>this.changeClass(article.id)}><img src={article.miniature} className='miniature'/></a>
               ))}
             </div>
           </div>

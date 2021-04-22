@@ -8,16 +8,18 @@ import "../styles/footer.css"
 
 function Footer(){
     return(
-        <Row className='foot'>
-            <Col>
-                <img className="logo_rs" src={FB} alt=''></img>
-                <img className="logo_rs" src={IG} alt=''></img>
-                <img className="logo_rs" src={Twitter} alt=''></img>
-            </Col>
-            <Col>
-                <p className='legale'>Mentions Légales • CGU • Données Personnelles •<span className='blue'> © VOLT 2021</span></p>
-            </Col>
-        </Row>
+        <footer>
+            <Row className=''>
+                <Col>
+                    <img className="logo_rs" src={FB} alt=''></img>
+                    <img className="logo_rs" src={IG} alt=''></img>
+                    <img className="logo_rs" src={Twitter} alt=''></img>
+                </Col>
+                <Col>
+                    <p className='legale'>Mentions Légales • CGU • Données Personnelles •<span className='blue'> © VOLT 2021</span></p>
+                </Col>
+            </Row>
+        </footer>
 
 
     );

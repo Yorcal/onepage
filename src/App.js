@@ -74,8 +74,8 @@ class App extends React.Component {
                 </Switch>
               </div>
             <Footer />
-            </Route>
-          </Switch>
+          </Route>
+        </Switch>
       </Router>
     );
   }
