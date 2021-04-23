@@ -22,8 +22,8 @@ class Home extends React.Component {
                             },
                 {   title : 'Bip Boup Article', 
                             id : 3,
-                            content: 'neggpopoqd  qdzdqdzdqd !!!!!',
-                            miniature: 'http://www3.poitiers-jeunes.com/wp-content/uploads/2016/10/Expressifs-Morgan-Bisson-84.jpg',
+                            content: 'ETRE G.TECH AU GAMING CAMPUS',
+                            miniature: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOvFbsdvw1r96L1flz2o-j-qRAkNcTQVY5w&usqp=CAU',
                             link :'https://google.com'
                             },
                 {   title : 'Twitter nous répond',

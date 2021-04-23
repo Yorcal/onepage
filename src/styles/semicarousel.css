@@ -11,12 +11,14 @@
     margin-left: 80vh;
 }
 .grando {
-    height: 350px;
-    width: 600px;
-    z-index: 0;
-    margin-top: 10vh;
-    margin-left: 100vh;
+    height: 370px;
+    width: 620px;
+    z-index: -1;
+    margin-left: 90vh;
+    margin-top: 11vh;
+    position: absolute
 }
+
 
 .global {
     width: 170vh;
@@ -24,4 +26,12 @@
 
 .ButtonNews {
 margin-left: 15vh;
+}
+
+.next_news {
+    background-color: #000000!important;
+    border: none!important;
+}
+.next_news:hover {
+    border: none!important;
 }

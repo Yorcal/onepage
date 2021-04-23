@@ -14,12 +14,12 @@ class SemiCarousel extends React.Component {
     
   changeIndex = index => this.setState({index})
 
-  
-  changeClass = index => {
+
+  changeClass = (index, length) => {
 
     var newindex = this.state.index;
 
-    if (newindex !== index) { 
+    if (newindex !== index && index > 0 && index < length) { 
       document.getElementById('Michael').classList.replace("animate__fadeInTopRight", "animate__fadeOutBottomLeft");
       document.getElementById('Jackson').classList.replace("animate__fadeInRight", "animate__fadeOutLeft");
       setTimeout(() => {
@@ -31,13 +31,15 @@ class SemiCarousel extends React.Component {
     }
 }
 
-
     render(){
 
       const news = this.props.news
-      console.log(news);
-        const newsSelected = news.find(n => n.id===this.state.index);
-        console.log(this.state.index,newsSelected);
+    
+      const newsSelected = news.find(n => n.id===this.state.index);
+
+      const newslength = news.length+1
+      
+        
         return(<>
 
           <div>
@@ -47,8 +49,12 @@ class SemiCarousel extends React.Component {
 
                   <Row>
                     <Col lg={1}>
-                      <Button className="rounded-pill margin-button" variant="primary">-</Button>
-                      <Button className="rounded-pill margin-button" variant="primary">+</Button>
+                      
+
+                    <Button id="down" onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news"><p className='pp'>«</p></Button>
+                    <Button id="up" onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news"><p className='pp'>»</p></Button>
+
+                    
                     </Col>
                     <Col lg={10} md={6}>
                       <h1 className="title">{newsSelected.content}</h1>
@@ -63,7 +69,7 @@ class SemiCarousel extends React.Component {
 
             <div className='div'>
               {news.map((article) => (
-                <a onClick={()=>this.changeClass(article.id)}><img src={article.miniature} className='miniature'/></a>
+                <a onClick={()=>this.changeClass(article.id, newslength)}><img src={article.miniature} className='miniature'/></a>
               ))}
             </div>
           </div>
