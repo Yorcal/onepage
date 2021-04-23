@@ -21,11 +21,11 @@ class Volt extends React.Component {
             <img className='Arriere animate__animated animate__zoomInDown' src={Volteuhgris} />
               <div className="blocShopVolt animate__animated animate__fadeInRight">
               <Row>
-                <Col lg={2} md={6}>
-                  <h1 className="title ">VOLT</h1> 
+                <Col lg={2} md={4}>
+                  <h1 className="title">VOLT</h1> 
                 </Col>
 
-                <Col lg={{span : 8, offset : 1}} md={{span : 4, offset : 1}}>
+                <Col lg={{span : 9, offset : 1}} md={{span : 4, offset : 2}}>
                   <h2 className="secondTitle">HIGH VOLTAGE, HUGE PERFORMANCE</h2> 
                 </Col> 
               </Row>

@@ -48,15 +48,17 @@ class SemiCarousel extends React.Component {
                 <div id="Jackson" className="content blocShopVolt animate__animated animate__fadeInRight">
 
                   <Row>
-                    <Col lg={1}>
+                    <Col lg={1} md={6} xs={2}>
                       
 
                     <Button id="down" onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news"><p className='pp'>«</p></Button>
+                    </Col>
+                    <Col lg={1} md={6} xs={2}>
                     <Button id="up" onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news"><p className='pp'>»</p></Button>
 
                     
                     </Col>
-                    <Col lg={10} md={6}>
+                    <Col lg={10} md={6} xs={12}>
                       <h1 className="title">{newsSelected.content}</h1>
                     </Col>
                   </Row>
