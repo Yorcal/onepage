@@ -1,20 +1,31 @@
+.fontTeams{
+    font-family: Helvetica, bold !important;
+    color: white !important;
+}
+
 .backBlue {
     background-color: #1089FF;
 }
 
-.teamsrow {
-    display: flex;
-    
-}
-
 .box{
+    height: 65vh;
+    width: 30vh;
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: rgba(16, 137, 255, 0.5);
-    height: 65vh;
+    
 }
 
+
+.teamContainer{
+    margin-left: 5vh;
+}
+
+.margin-box {
+    margin-right: 2vh;
+    margin-top: 4vh;
+}
 
 .RL{
     background-image: url('https://i.jeuxactus.com/datas/jeux/r/o/rocket-league/xl/rocket-league-5fcc7db162613.jpg');
@@ -37,10 +48,9 @@
     background-size: cover;
 }
 
-.marginRight {
-    margin-right: 2vh;
-}
-
-.TeamListe{
-    width: 180vh;
+@media (min-width: 1700px){
+.col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    }
 }

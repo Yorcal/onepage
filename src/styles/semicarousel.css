@@ -10,7 +10,7 @@
 .info {
     margin-left: 80vh;
 }
-.grando {
+.img-size {
     height: 370px;
     width: 620px;
     z-index: -1;
@@ -19,6 +19,10 @@
     position: absolute
 }
 
+.bloc{
+    padding-top: 9%;
+    width: 80%;
+}
 
 .global {
     width: 170vh;

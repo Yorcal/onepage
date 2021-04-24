@@ -4,13 +4,13 @@
 }
 
 .textLogo{
-    height: 10vh;
-    width: 30vh;
+    height: 9vh;
+    width: 27vh;
 }
-.textLogo2{
-    height: 10vh;
-    width: 10vh;
-    padding-top: 1vh;
+.textLogoTV{
+    height: 11vh;
+    width: 14vh;
+    margin-top: 1vh;
 }
 
 .colorNavbar{
@@ -33,24 +33,21 @@
     border-bottom: solid 1.84px #1089FF !important;
 }
 
-.ml-auto{
-     height: 32px;
-}
-
 .ml-auto a{
     margin-right: 15px  !important;
     margin-left: 15px !important;
 }
 
-.NavBarFixed{
-    height: 150px!important;
-    width: auto!important;
-}
-@media only screen and (max-width:1000px) {
+
+@media only screen and (max-width:1199px) {
     .textLogo{
-    visibility: hidden;
-    }
-    .textLogo2{
         visibility: hidden;
-        }
-   }
+        width: 0px;
+        height: 0px;
+    }
+    .textLogoTV{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}

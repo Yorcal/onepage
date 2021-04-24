@@ -1,21 +1,12 @@
-.containerwebtv{
-    display: flex;
-    height: calc(90vh - 215px);
+.containerWebTV{
+    width:80%
 }
 
-.backBlue {
-    background-color: #1089FF;
-}
-
-.right{
+.containerWebTV .styleWebTV{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 20vh;
-}
-.left{
-    align-items: center;
-    display: flex;
-    margin-right: 2%;
-    width: 120vh;
+    background-color: #1089FF;
+    height: 65vh;
+    margin-top: 2vh;
 }

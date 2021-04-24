@@ -46,7 +46,7 @@ class App extends React.Component {
                 )} />
           <Route>
           <CustomNavbar  />
-            <div id='MiddlePage' className='overflow-hidden'>
+            <div id='MiddlePage'>
                 <CustomVerticalNav  />
                 <Switch>
                   

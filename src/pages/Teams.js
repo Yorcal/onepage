@@ -17,46 +17,32 @@ class Teams extends React.Component {
     }
     render(){
         return(<> 
-        <div className='TeamListe'>
-          <Row className='teamsrow'>
-            
-              <Col lg={2} md={4}>
-                <div className='RL marginRight animate__animated animate__backInUp'>
-                  <div className='box '>
-                    <img src={RL} />
-                    </div>
+        <div className='teamContainer'>
+          <Row>
+            <div className='RL margin-box animate__animated animate__backInUp'>
+              <div className='box'>
+                <img src={RL} />
                 </div>
-              </Col>
-
-              <Col lg={2} md={4}>
-                <div className='LOL marginRight animate__animated animate__backInDown animate__delay-1s'>
-                  <div className='box '>
-                    <img src={LOL} />
-                    </div>
+            </div>
+            <div className='LOL margin-box animate__animated animate__backInDown animate__delay-1s'>
+              <div className='box '>
+                <img src={LOL} />
                 </div>
-              </Col>
-
-              <Col lg={2} md={4}>
-                <div className='CSGO marginRight animate__animated animate__backInUp'>
-                  <div className='box '>
-                    <img src={CSGO} />
-                    </div>
+            </div>
+            <div className='CSGO margin-box animate__animated animate__backInUp'>
+              <div className='box '>
+                <img src={CSGO} />
                 </div>
-              </Col>
-
-              <Col lg={2} md={6}>
-                <div className='R6 marginRight animate__animated animate__backInDown animate__delay-1s'>
-                  <div className='box '>
-                    <img src={R6} />
-                    </div>
+            </div>
+            <div className='R6 margin-box animate__animated animate__backInDown animate__delay-1s'>
+              <div className='box '>
+                <img src={R6} />
                 </div>
-              </Col>
-
-              <Col lg={2} md={6}>
-                <div className='box marginRight animate__animated animate__backInUp'>
-                  <h1 >SOON</h1>
-                </div>
-              </Col>
+            </div>
+            <div className='box margin-box animate__animated animate__backInUp'>
+              <h1 className="fontTeams">SOON</h1>
+            </div>
+              
             </Row>
           </div>
   </>);

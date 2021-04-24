@@ -1,25 +1,26 @@
 .blocShopVolt{
     padding-top: 9%;
-    width: 75%;
-    
+    width: 90%;
+    z-index: 0;
+}
+
+.font {
+    font-family: Helvetica;
 }
 
 .title {
     font-size: 100px !important;
-    color: white;
-    font-family: Helvetica; 
+    color: white; 
     font-weight: bolder;
 }
 
 .secondTitle {
     font-size: 30px !important;
     color: #1089FF;
-    margin-top: 65px;
-    font-family: Helvetica; 
     font-weight: 900;
 }
 
-.font{
+.voltshop-content{
     color: white;
     font-size: 16px;
 }
@@ -27,23 +28,47 @@
 .margin-button{
     margin-top: 40px;
 }
-.Arriere {
+
+.backgroundImage {
     z-index: -1;
     position: absolute;
-    margin-left: 70vh;
+    margin-left: 50%;
 }
-.content{
-    z-index: 0;
-}
-.gros {
+
+.jerseySize {
     height: 75vh;
 }
-@media only screen and (max-width:1000px) {
-    .Arriere{
-        height: 50vh;
-        width: 50vh;
-        margin-top: 10vh;
-        margin-left: 0vh;
-        overflow: hidden;
+
+@media (max-width: 1480px){
+    .backgroundImage{
+        margin-left: 35%;
     }
-   }
+}
+
+@media (min-width: 1183px){
+    .secondTitle{
+        margin-top: 65px;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1123px){
+    .secondTitle{
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 1123px){
+    .secondTitle{
+        margin-top: 10px;
+    }
+    .voltshop-content{
+        margin-top:10px;
+    }
+}
+
+@media (max-width: 1100px){
+    .backgroundImage{
+        margin-left: 25%;
+    }
+}

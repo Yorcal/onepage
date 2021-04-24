@@ -20,12 +20,12 @@ class SemiCarousel extends React.Component {
     var newindex = this.state.index;
 
     if (newindex !== index && index > 0 && index < length) { 
-      document.getElementById('Michael').classList.replace("animate__fadeInTopRight", "animate__fadeOutBottomLeft");
-      document.getElementById('Jackson').classList.replace("animate__fadeInRight", "animate__fadeOutLeft");
+      document.getElementById('img-carousel').classList.replace("animate__fadeInTopRight", "animate__fadeOutBottomLeft");
+      document.getElementById('text-carousel').classList.replace("animate__fadeInRight", "animate__fadeOutLeft");
       setTimeout(() => {
         this.setState({index},() =>{
-          document.getElementById('Michael').classList.replace("animate__fadeOutBottomLeft", "animate__fadeInTopRight");
-          document.getElementById('Jackson').classList.replace("animate__fadeOutLeft","animate__fadeInRight");
+          document.getElementById('img-carousel').classList.replace("animate__fadeOutBottomLeft", "animate__fadeInTopRight");
+          document.getElementById('text-carousel').classList.replace("animate__fadeOutLeft","animate__fadeInRight");
         })
       }, 350);
     }
@@ -44,17 +44,17 @@ class SemiCarousel extends React.Component {
 
           <div>
               <div className='global'>
-                <img id="Michael" className='Arriere grando animate__animated animate__fadeInTopRight' src={newsSelected.miniature} />
-                <div id="Jackson" className="content blocShopVolt animate__animated animate__fadeInRight">
+                <img id="img-carousel" className="img-size animate__animated animate__fadeInTopRight" src={newsSelected.miniature} />
+                <div id="text-carousel" className="content bloc animate__animated animate__fadeInRight">
 
                   <Row>
-                    <Col lg={1} md={6} xs={2}>
+                    <Col lg={1} md={6} xs={6}>
                       
 
-                    <Button id="down" onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news"><p className='pp'>«</p></Button>
+                    <Button onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news"><p className='pp'>«</p></Button>
                     </Col>
-                    <Col lg={1} md={6} xs={2}>
-                    <Button id="up" onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news"><p className='pp'>»</p></Button>
+                    <Col lg={1} md={6} xs={6}>
+                    <Button onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news"><p className='pp'>»</p></Button>
 
                     
                     </Col>

@@ -22,14 +22,15 @@ class CustomNavbar extends React.Component {
 
         }  
     }
+
     
     render(){
         return (
-            <Navbar collapseOnSelect expand="md" className="colorNavbar NavBarFixed" variant="dark">
+            <Navbar collapseOnSelect expand="xl" className="colorNavbar" variant="dark">
                 <Switch>
                     <Route exact path='/webtv'>
                         <Navbar.Brand><NavLink to="/news"><img className="App-logo logo" src={logo} alt='VoltLogo'></img></NavLink></Navbar.Brand>
-                        <Navbar.Brand><img className="textLogo" src={textLogo} alt='VoltText'></img><img className="textLogo2 animate__animated animate__lightSpeedInRight" src={LogoTv} alt='.TV'></img></Navbar.Brand>
+                        <Navbar.Brand><img className="textLogo" src={textLogo} alt='VoltText'></img><img className="textLogoTV animate__animated animate__lightSpeedInRight" src={LogoTv} alt='.TV'></img></Navbar.Brand>
                     </Route>
                     <Route exact path='/teams'>
                     
