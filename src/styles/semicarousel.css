@@ -1,11 +1,37 @@
+
+.titleCarousel {
+    font-size: 100px !important;
+    color: white; 
+    font-weight: bolder;
+}
+
 .miniature {
     width : 15vh;
     height : 10vh;
     margin-left: 1vh;
     margin-top: 5vh;
 }
-.div{
-    margin-left: 10vh;
+
+.miniature:hover {
+    cursor: pointer;
+}
+
+.arrowStyle {
+    width: 3vh;
+    height: 4vh;    
+}
+
+.arrowStyle:hover{
+    filter: brightness(50%);
+}
+
+.centerArrow{
+    text-align: center;
+    margin-top: 4vh
+}
+
+.miniatureMargin{
+    margin-left: 18vh;
 }
 .info {
     margin-left: 80vh;
@@ -28,10 +54,6 @@
     width: 170vh;
 }
 
-.ButtonNews {
-margin-left: 15vh;
-}
-
 .next_news {
     background-color: rgba(0, 0, 0, 0)!important;
     border: none !important;
@@ -47,4 +69,14 @@ margin-left: 15vh;
 
 .btn:focus{
     box-shadow: none !important; 
+}
+
+@media (max-width: 1670px){
+    .titleCarousel{
+        font-size: 50px !important;
+    }
+    .img-size{
+        height: 330px;
+        width: 550px;
+    }
 }
