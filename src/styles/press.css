@@ -15,5 +15,6 @@
 @media only screen and (max-width:1300px){
     .boxpress{
         margin-bottom: 2vh;
+        height: 70vh;
     }
 }
