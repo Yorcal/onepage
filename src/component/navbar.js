@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-// import Container from 'react-bootstrap/Container'
 import logo from '../images/Logo_Volt.png';
 import textLogo from '../images/unknown.png';
 import LogoTv from '../images/logo_tv.png'

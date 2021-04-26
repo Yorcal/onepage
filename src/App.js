@@ -29,13 +29,6 @@ class App extends React.Component {
     }
   }
   
-  
-  // ChangerArticle = (article, NewArticle) => {
-  //   this.setState((article:NewArticle))
-    
-  // }
-  
-
 
   render(){
     return (
