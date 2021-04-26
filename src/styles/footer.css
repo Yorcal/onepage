@@ -21,3 +21,13 @@ footer {
     line-height: 60px;
 }
 
+@media only screen and (max-width:1300px){
+    footer{
+        position: relative;
+
+    }
+    .legale{
+        margin: 0 0;
+        font-size: 10px;
+    }
+}

@@ -3,8 +3,6 @@ import "../styles/semicarousel.css"
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import leftArrow from '../images/arrowLeft2x.png'
-import rightArrow from '../images/arrowRight2x.png'
 
 class SemiCarousel extends React.Component {
     constructor(props){
@@ -50,29 +48,28 @@ class SemiCarousel extends React.Component {
                 <div id="text-carousel" className="content bloc animate__animated animate__fadeInRight">
 
                   <Row>
-                    <Col className="centerArrow" xl={2} md={2} xs={2}> 
-                      <Button onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news">
-                        <img src={leftArrow} className='arrowStyle'/>
-                      </Button>
-                      <Button onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news">
-                        <img src={rightArrow} className='arrowStyle'/>
-                      </Button>
+                    <Col lg={1} md={6} xs={6}>
+                      
+
+                    <Button onClick={()=>this.changeClass(this.state.index -1, newslength)} className="fontStyle next_news"><p className='pp'>«</p></Button>
                     </Col>
-                    <Col xl={10} md={6} xs={12}>
-                      <h1 className="titleCarousel">{newsSelected.content}</h1>
+                    <Col lg={1} md={6} xs={6}>
+                    <Button onClick={()=>this.changeClass(this.state.index +1, newslength)} className="fontStyle next_news"><p className='pp'>»</p></Button>
+
+                    
+                    </Col>
+                    <Col lg={10} md={6} xs={12}>
+                      <h1 className="restitle">{newsSelected.content}</h1>
                     </Col>
                   </Row>
                   <Row>
-                    <Col xl={2} md={2} xs={1}></Col>
-                    <Col xl={10} md={10} xs={10}>
-                      <Button className="rounded-pill margin-button" variant="primary">GO TO ARTICLE</Button>
-                    </Col>
+                    <Button className="rounded-pill margin-button ButtonNews" variant="primary">GO TO ARTICLE</Button>
                   </Row>
                 
                 </div>
             </div>
 
-            <div className='miniatureMargin'>
+            <div className='div'>
               {news.map((article) => (
                 <a onClick={()=>this.changeClass(article.id, newslength)}><img src={article.miniature} className='miniature'/></a>
               ))}

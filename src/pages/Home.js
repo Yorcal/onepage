@@ -22,13 +22,13 @@ class Home extends React.Component {
                             },
                 {   title : 'Bip Boup Article', 
                             id : 3,
-                            content: 'ETRE G.TECH AU GAMING CAMPUS',
-                            miniature: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOvFbsdvw1r96L1flz2o-j-qRAkNcTQVY5w&usqp=CAU',
+                            content: 'VOLT FOR THE NEXT CS:GO MAJOR',
+                            miniature: 'https://www.forbes.fr/wp-content/uploads/2017/07/business-esport-e1499239743415.jpg',
                             link :'https://google.com'
                             },
                 {   title : 'Twitter nous répond',
                             id: 4,
-                            content: 'oui ou nan ou oui ou nan',
+                            content: 'VISER LE SOMMET',
                             miniature: 'https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg',
                             link :'https://google.com'
                             }
