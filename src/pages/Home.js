@@ -22,7 +22,7 @@ class Home extends React.Component {
                             },
                 {   title : 'Bip Boup Article', 
                             id : 3,
-                            content: 'VOLT FOR THE NEXT CS:GO MAJOR',
+                            content: 'VISER LE SOMMET',
                             miniature: 'https://www.forbes.fr/wp-content/uploads/2017/07/business-esport-e1499239743415.jpg',
                             link :'https://google.com'
                             },
