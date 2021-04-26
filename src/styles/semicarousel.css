@@ -18,6 +18,11 @@
     margin-top: 11vh;
     position: absolute
 }
+.restitle {
+    font-size: 100px;
+    color: white; 
+    font-weight: bolder;
+}
 
 .bloc{
     padding-top: 9%;
@@ -47,4 +52,34 @@ margin-left: 15vh;
 
 .btn:focus{
     box-shadow: none !important; 
+}
+
+@media only screen and (max-width:1400px){
+    .restitle{
+        font-size: 50px;
+        margin-bottom: 2vh;
+        margin-top: 9vh;
+    }
+    .img-size{
+        margin: 0 20vh;
+    }
+    .ButtonNews{
+        margin-left: 2vh;   
+    }
+}
+
+@media only screen and (max-width:850px){
+    .restitle{
+        font-size: 30px;
+        margin-left: 6vw;
+        margin-bottom: 2vh;
+        margin-top: 0;
+    }
+    .img-size{
+        width: 600px;
+        margin: 0 0;
+    }
+    .ButtonNews{
+        margin-left: 2vh;
+    }
 }

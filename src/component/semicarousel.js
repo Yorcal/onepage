@@ -59,7 +59,7 @@ class SemiCarousel extends React.Component {
                     
                     </Col>
                     <Col lg={10} md={6} xs={12}>
-                      <h1 className="title">{newsSelected.content}</h1>
+                      <h1 className="restitle">{newsSelected.content}</h1>
                     </Col>
                   </Row>
                   <Row>
