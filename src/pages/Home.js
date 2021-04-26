@@ -22,13 +22,13 @@ class Home extends React.Component {
                             },
                 {   title : 'Bip Boup Article', 
                             id : 3,
-                            content: 'VISER LE SOMMET',
+                            content: 'VISER LE SOMMET DES CIEUX',
                             miniature: 'https://www.forbes.fr/wp-content/uploads/2017/07/business-esport-e1499239743415.jpg',
                             link :'https://google.com'
                             },
                 {   title : 'Twitter nous répond',
                             id: 4,
-                            content: 'VISER LE SOMMET',
+                            content: 'VISER LE SOMMET DES CIEUX',
                             miniature: 'https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg',
                             link :'https://google.com'
                             }
